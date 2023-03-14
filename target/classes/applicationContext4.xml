@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userFirst" class="com.task4.weak_conection.impl.UserFirst">
+        <constructor-arg ref="userKira"/>
+        <constructor-arg ref="ageThirty"/>
+        <constructor-arg ref="statusWorker"/>
+    </bean>
+
+    <bean id = "userKira" class="com.task4.weak_conection.impl.NameKira"/>
+    <bean id = "ageThirty" class="com.task4.weak_conection.impl.AgeThirty"/>
+    <bean id = "statusStudent" class="com.task4.weak_conection.impl.StatusStudent"/>
+
+    <bean id = "userOla" class="com.task4.weak_conection.impl.NameOla"/>
+    <bean id = "ageFouty" class="com.task4.weak_conection.impl.AgeFouty"/>
+    <bean id = "statusWorker" class="com.task4.weak_conection.impl.StatusWorker"/>
+
+</beans>
